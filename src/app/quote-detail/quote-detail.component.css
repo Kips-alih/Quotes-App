@@ -1,0 +1,14 @@
+
+#dislike{
+  background-color: red;
+  color: white;
+  width: 60px;
+}
+#like{
+  background-color: hsl(90, 73%, 26%);
+  color: white;
+  width: 60px;
+}
+#thumbUp, #thumbDown{
+  font-size: 20px;
+}
