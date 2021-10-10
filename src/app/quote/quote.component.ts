@@ -12,6 +12,8 @@ export class QuoteComponent implements OnInit {
   quotes:Quote[]=[
     new Quote(1,'Alphonce','We ourselves feel that what we are doing is just a drop in the ocean. But the ocean would be less because of that missing drop.','Mother Teresa',new Date(2021,8,8),0,0),
     new Quote(2,'Alphonce','We have the power to make a difference. But we need to VOTE.','Kylie Jenner',new Date(2021,9,4),0,0),
+    new Quote(2,'Kipngeno','No human is limited.','Eliud Kipchoge',new Date(2021,9,10),0,0),
+
   ];
 
   toggleDetails(index: number){
