@@ -1,44 +1,45 @@
 <div class="container">
 
-  <h1>New quote form</h1>
+  <h4>New quote form</h4>
 
 
-<div class="card" >
-  <div class="card-body">
-    <div>
-      <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
-        <p>Add a new quote</p>
-        <div class="form-group">
-          <label for="name">Your Name</label>
-          <input type="text" placeholder="Alphonce" class="form-control" id="name"  [(ngModel)]="newQuote.name" name="name" #name='ngModel' autocomplete="off" required>
-          <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-            <p>Name is required</p>
+  <div class="card" >
+    <div class="card-body">
+      <div>
+        <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+          <p>Add a new quote</p>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" placeholder="Alphonce" class="form-control" id="name"  [(ngModel)]="newQuote.name" name="name" #name='ngModel' autocomplete="off" required>
+            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+              <p>Name is required</p>
+            </div>
           </div>
-        </div>
-        <div class="form-group">
-          <label for="quote">Type the Quote</label>
-          <textarea type="text" placeholder="Quote here.." class="form-control" id="quote" [(ngModel)]="newQuote.theQuote" name="quote" #theQuote='ngModel' autocomplete="off" required  rows="4"></textarea>
-          <div [hidden]="theQuote.valid || theQuote.pristine" class="alert alert-danger">
-            <p>Quote is required</p>
+          <div class="form-group">
+            <label for="quote">Type the Quote</label>
+            <textarea type="text" placeholder="Quote here.." class="form-control" id="quote" [(ngModel)]="newQuote.theQuote" name="quote" #theQuote='ngModel' autocomplete="off" required  rows="4"></textarea>
+            <div [hidden]="theQuote.valid || theQuote.pristine" class="alert alert-danger">
+              <p>Quote is required</p>
+            </div>
+          
           </div>
-        
-        </div>
-        <div class="form-group">
-          <label for="author">Author of this quote</label>
-          <textarea type="text" placeholder="Mother Teresa" class="form-control" id="author" rows="2"  [(ngModel)]="newQuote.author" name="author" #author='ngModel' required></textarea>
-          <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
-            <p>Author is required</p>
+          <div class="form-group">
+            <label for="author">Author of this quote</label>
+            <textarea type="text" placeholder="Mother Teresa" class="form-control" id="author" rows="2"  [(ngModel)]="newQuote.author" name="author" #author='ngModel' required></textarea>
+            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+              <p>Author is required</p>
+            </div>
           </div>
-        </div>
-        <!-- <div class="form-group">
-          <label for="add">Date Added</label>
-          <input type="date"  class="form-control" id="add" name="add" required>
-        </div> -->
-        <button type="submit" class="btn btn-success">Add Quote!</button>
-      </form>
+          <!-- <div class="form-group">
+            <label for="add">Date Added</label>
+            <input type="date"  class="form-control" id="add" name="add" required>
+          </div> -->
+          <button id="addQuote" type="submit" class="btn btn-success">Add Quote!</button>
+        </form>
+      </div>
+      
+
     </div>
-    
-
   </div>
 </div>
   <!-- <hr>
