@@ -1,12 +1,17 @@
-
-#dislike{
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+#author,#timePassed{
+  color: rgb(33, 170, 5);
+}
+button[id="dislike"]{
   background-color: red;
   color: white;
+  font-size: 18px;
   width: 60px;
 }
-#like{
+button[id="like"]{
   background-color: hsl(90, 73%, 26%);
   color: white;
+  font-size: 18px;
   width: 60px;
 }
 #thumbUp, #thumbDown{
