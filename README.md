@@ -25,8 +25,10 @@ To get the project into your local machine:
 
 The languages used in development are:
 
-* Angular.
-* Bootstrap.
+* Typescript
+* [Javascript](https://www.w3schools.com/js/).
+* [Html](https://www.w3schools.com/html/).
+* [Css](https://www.w3schools.com/css/)
 
 ## Support and contact details
 
