@@ -1,16 +1,19 @@
 <div class="container">
-  <h1>My Quotes</h1>
+  <h1>The Quotes</h1>
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-8">
         <div id="yourQuote" *ngFor='let quote of quotes;let i=index'>
           <h4 appHighlighter>{{quote.theQuote}}</h4>
-          <p>Quote created on {{quote.creationDate|date}}.</p>  
-          <button class="btn btn-primary" (click)='toggleDetails(i)'>More Details</button>
-          <app-quote-detail *ngIf='quote.showDescription'[quote]='quote' (deleteQuote)='deleteThisQuote($event,i)'></app-quote-detail>
+          <p>Quote created on {{quote.creationDate|date}}.</p> 
+          <div class="right">
+            <button class="btn btn-primary" (click)='toggleDetails(i)'>More Details</button>
+            <app-quote-detail *ngIf='quote.showDescription'[quote]='quote' (deleteQuote)='deleteThisQuote($event,i)'></app-quote-detail>
+          </div> 
+         
         </div>
         <!-- <p *ngIf='quotes.length < 1'>You can add another quote</p> -->
     </div>
-    <div class="col-md-6 text-center">
+    <div class="col-md-4 text-center">
       <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
   </div>
