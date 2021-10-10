@@ -6,7 +6,7 @@
   <div class="card" >
     <div class="card-body">
       <div>
-        <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+        <form (ngSubmit)='submitQuote();quoteForm.resetForm({})' #quoteForm='ngForm'>
           <p>Add a new quote</p>
           <div class="form-group">
             <label for="name">Your Name</label>
