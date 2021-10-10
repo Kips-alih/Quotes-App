@@ -18,7 +18,7 @@ To get the project into your local machine:
 
 * Open your terminal
 * Create a folder and navigate to the folder you created.
-* Do git clone <https://github.com/Kips-alih/Quotes-App.git>
+* Run `git clone https://github.com/Kips-alih/Quotes-App.git`
 * Then check the folder to confirm the project is in your local machine.
 
 ## Technologies used
