@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
 <body>
-<p>The quote author is {{quote.author}}</p>
-<p>This quote was submitted by <strong>{{quote.name}}</strong>.</p>
-<p> Time lapse: {{quote.creationDate|timeCount}} days ago.</p>
+<p>The quote author is <span id="author">{{quote.author}}</span></p>
+<p>This quote was added by <strong>{{quote.name}}</strong>.</p>
+<p>Added <span id="timePassed">{{quote.creationDate|timeCount}} days ago</span>.</p>
 <div class="clicks d-flex justify-content-space-between">
   <button id="like" class="btn btn-sm " (click)='upvote()'>{{quote.upvotes}}<i class="fa fa-thumbs-up" id="thumbUp"></i></button>
   <button class="btn btn-sm " (click)='downvote()' id="dislike">{{quote.downvotes}}<i class="fa fa-thumbs-down"id="thumbDown"></i></button>
