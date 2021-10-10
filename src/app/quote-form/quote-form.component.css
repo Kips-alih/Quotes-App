@@ -1,0 +1,6 @@
+h4{
+  text-transform: capitalize;
+}
+button[id="addQuote"]{
+  margin-top: 3px;
+}
