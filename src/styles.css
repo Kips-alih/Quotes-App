@@ -1,2 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+body{
+  background-image:linear-gradient(rgba(102, 145, 185, 0.685), rgba(72, 158, 173, 0.616)), url("../src/assets/Guiding-Light.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
