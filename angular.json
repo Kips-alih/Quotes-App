@@ -98,9 +98,13 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
   },
-  "defaultProject": "Quotes"
+  "defaultProject": "Quotes-App"
 }
