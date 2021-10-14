@@ -4,7 +4,7 @@
     <div class="col-md-8">
         <div id="yourQuote" *ngFor='let quote of quotes;let i=index'>
           <h4 appHighlighter>{{quote.theQuote}}</h4>
-          <p>Quote posted on <span id="posted">{{quote.creationDate|date}}</span>.</p> 
+          <p>Quote posted on <span id="posted">{{quote.creationDate|date}},</span><span class="customPipe">{{quote.creationDate|timeCount}} days ago</span>.</p> 
           <div class="right">
             <button class="btn btn-primary" (click)='toggleDetails(i)'>More Details</button>
             <app-quote-detail *ngIf='quote.showDescription'[quote]='quote' (deleteQuote)='deleteThisQuote($event,i)'></app-quote-detail>
