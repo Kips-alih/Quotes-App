@@ -4,19 +4,19 @@ import { Directive,ElementRef, HostListener } from '@angular/core';
   selector: '[appHighlighter]'
 })
 export class HighlighterDirective {
-  constructor(private elem:ElementRef){}
+  constructor(private elem:ElementRef){elem.nativeElement.style.color="green";}
 
-  @HostListener("click")onClicks(){
-    this.textDeco("green")
-  }
+  // @HostListener("click")onClicks(){
+  //   this.textDeco("green")
+  // }
 
-  @HostListener("dblclick")onDoubleClicks(){
-    this.textDeco("")
-  }
+  // @HostListener("dblclick")onDoubleClicks(){
+  //   this.textDeco("")
+  // }
 
-  private textDeco(action:string){
-    this.elem.nativeElement.style.color=action;
-  }
+  // private textDeco(action:string){
+  //   elem.nativeElement.style.color="green";
+  // }
 }
   
 
