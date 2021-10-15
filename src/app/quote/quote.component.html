@@ -3,7 +3,8 @@
   <div class="row">
     <div class="col-md-8">
         <div id="yourQuote" *ngFor='let quote of quotes;let i=index'>
-          <h4 appHighlighter>{{quote.theQuote}}</h4>
+          <h4  *ngIf="mostUpVotes()!==quote.upvotes || quote.upvotes===0" class="p-3 text">{{ quote.theQuote }}</h4>
+          <h4 appHighlighter *ngIf="mostUpVotes()===quote.upvotes && quote.upvotes>0">{{quote.theQuote}}</h4>
           <p>Quote posted on <span id="posted">{{quote.creationDate|date}},</span><span class="customPipe">{{quote.creationDate|timeCount}} days ago</span>.</p> 
           <div class="right">
             <button class="btn btn-primary" (click)='toggleDetails(i)'>More Details</button>
